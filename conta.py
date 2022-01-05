@@ -26,6 +26,18 @@ class Conta:
         self.saca(value)
         destination.deposita(value)
 
+    def get_balance(self):
+        return self.__balance
+
+    def get_owner(self):
+        return self.__owner
+
+    def get_limit(self):
+        return self.__limit
+
+    def set_limit(self, value):
+        self.__limit = value
+
 
 if(__name__ == '__main__'):
     conta = Conta(1, 'Marcus', 10)
