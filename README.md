@@ -1,4 +1,4 @@
-# Formação Python (Alura):[https://www.alura.com.br/] :snake:
+# Formação Python [Alura](https://www.alura.com.br/) :snake:
 
 ## Repositório com os cursos da formação Python da Alura
 
