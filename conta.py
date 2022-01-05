@@ -19,16 +19,19 @@ class Conta:
         if(self.__balance >= value):
             self.__balance -= value
             print(f"Valor sacado: {value}")
-            print(f"Saldo antigo: {balance_antigo}\nSaldo atual: {self.__balance}")
+            print(f"Saldo antigo: {balance_antigo}")
+            print(f"Saldo atual: {self.__balance}")
 
-    # def transfere(self, value, )
+    def transfere(self, value, destination):
+        self.saca(value)
+        destination.deposita(value)
 
 
 if(__name__ == '__main__'):
     conta = Conta(1, 'Marcus', 10)
-    conta.extrato()
-    conta.deposita(1)
-    conta.saca(2)
-    conta.saca(2000)
+    conta2 = Conta(2, 'Mayra', 10)
+    conta.transfere(10, conta2)
+    print(conta.extrato())
+    print(conta2.extrato())
     new_date = Date(12, 2, 1992)
     new_date.format_date()
